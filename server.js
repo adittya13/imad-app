@@ -6,9 +6,9 @@ var app = express();
 app.use(morgan('combined'));
 
 var articleOne = {
-    Title: 'Article One | Adittya Srikanth',
-    Heading: 'Article One',
-    Dates: 'August 7 2017',
+    title: 'Article One | Adittya Srikanth',
+    heading: 'Article One',
+    date: 'August 7 2017',
     content:` 
                 <p>
                     This is the content of the first article.
@@ -43,7 +43,7 @@ var articleOne = {
     {
         var title=data.title;
         var content=data.content;
-        var date=data.dates;
+        var date=data.date;
         var heading=data.heading;
         var htmltemplate = 
             `<html>
@@ -69,7 +69,7 @@ var articleOne = {
                         </h3>
                 
                         <div>
-                        ${dates}
+                        ${date}
                         </div>
                 
                         <div>
