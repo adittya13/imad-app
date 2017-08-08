@@ -5,39 +5,104 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title: 'Article One | Adittya Srikanth',
-    heading: 'Article One',
-    date: 'August 7 2017',
-    content:` 
-                <p>
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                </p>
-                
-                <p>
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                </p>
-                
-                <p>
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                    This is the content of the first article.
-                    This is just to see if it works.
-                </p>`,
-
-};
+var articles = {
+        
+        articleOne :   {
+            title : 'Article One | Adittya Srikanth',
+            heading: 'Article One',
+            date: 'August 7 2017',
+            content:` 
+                        <p>
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                            This is the content of the first article.
+                            This is just to see if it works.
+                        </p>`
+                        },
+        articleTwo :   {
+            title: 'Article Two | Adittya Srikanth',
+            heading: 'Article Two',
+            date: 'August 7 2017',
+            content:` 
+                        <p>
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                            This is the content of the Second article.
+                            This is just to see if it works.
+                        </p>`}, 
+        articleThree : {
+            title: 'Article Three | Adittya Srikanth',
+            heading: 'Article Three',
+            date: 'August 7 2017',
+            content:` 
+                       <p>
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                        </p>
+                        
+                        <p>
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                            This is the content of the Third article.
+                            This is just to see if it works.
+                        </p>`
+                        }
+};   
 
     function createtemplate(data)
     {
