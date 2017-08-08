@@ -151,9 +151,9 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/:articlename',function(req,res) {
-    var articlename = req.parans.articlename;
-   res.send(createtemplate(articles[articlename]));
+app.get('/:articleName',function(req,res) {
+    var articleName = req.params.articleName;
+   res.send(createtemplate(articles[articleName]));
 });
 
 
