@@ -153,7 +153,7 @@ app.get('/', function (req, res) {
 
 var articleName = req.parans.articleName;
 
-app.get('/ui/:articleName',function(req,res) {
+app.get('/:articleName',function(req,res) {
    res.send(createtemplate(articles[articleName]));
 });
 
