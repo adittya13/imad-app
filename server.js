@@ -150,9 +150,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleName = req.parans.articleName;
 
 app.get('/:articleName',function(req,res) {
+    var articleName = req.parans.articleName;
    res.send(createtemplate(articles[articleName]));
 });
 
